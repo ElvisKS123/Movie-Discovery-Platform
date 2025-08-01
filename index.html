@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Discovery Platform</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Movie Discovery Platform </h1>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Search movies...">
+      <select id="genre-select"></select>
+      <select id="sort-select">
+        <option value="popularity.desc">Popular</option>
+        <option value="vote_average.desc">Top Rated</option>
+        <option value="release_date.desc">Newest</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+    <div id="movies"></div>
+    <div id="movie-modal" class="modal"></div>
+  </div>
+  <script src="env.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
