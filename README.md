@@ -137,5 +137,8 @@ Movie data powered by [TMDb API](https://developer.themoviedb.org/docs)
 
 ---
 
+# Website
+ https://movie-discovery-platform-theta.vercel.app/
+
 # demo video
 link video
