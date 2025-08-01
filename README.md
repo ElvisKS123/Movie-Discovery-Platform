@@ -141,4 +141,4 @@ Movie data powered by [TMDb API](https://developer.themoviedb.org/docs)
  https://movie-discovery-platform-theta.vercel.app/
 
 # demo video
-[link video](https://www.loom.com/share/cbbc390c441e435b8dc439477939db1b?sid=3efdb14b-eb39-4dda-a233-a82f8a0ce639)
+[[link video](https://www.loom.com/share/6e84daebc05e49548cd0f5d6a266633e?sid=a4a3c739-b696-4da8-8dae-4546f035c4ae)]
