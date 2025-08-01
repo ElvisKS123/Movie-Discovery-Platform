@@ -37,9 +37,9 @@ Movie data provided by [TMDb API](https://developer.themoviedb.org/docs) — a p
 
 ## Docker Image Details
 
-**Docker Hub Repository**: https://hub.docker.com/repository/docker/ketia/movie-discovery
+**Docker Hub Repository**: https://hub.docker.com/repository/docker/elvisk123/movie-discovery
 
-**Image Name**: `ketia/movie-discovery`
+**Image Name**: `elvisk123/movie-discovery`
 
 **Tags**:  
 - `v1`  
@@ -50,8 +50,8 @@ Movie data provided by [TMDb API](https://developer.themoviedb.org/docs) — a p
 ## Build Instructions
 
 ```bash
-docker build -t ketia/movie-discovery:v1 .
-docker run -e TMDB_API_KEY="your_actual_api_key" -p 8080:8080 ketia/movie-discovery:v1
+docker build -t elvisk123/movie-discovery:v1 .
+docker run -e TMDB_API_KEY="e1afb4b04e6e676a5e5bc9d6195b3175" -p 8080:8080 elvisk123/movie-discovery:v1
 curl http://localhost:8080
 ```
 
@@ -63,10 +63,10 @@ curl http://localhost:8080
 
 ```bash
 # On Web01 and Web02:
-docker pull ketia/movie-discovery:v1
+docker pull elvisk123/movie-discovery:v1
 docker run -d --name movie-discovery --restart unless-stopped \
-  -e TMDB_API_KEY="your_actual_api_key" \
-  -p 8080:8080 ketia/movie-discovery:v1
+  -e TMDB_API_KEY="e1afb4b04e6e676a5e5bc9d6195b3175" \
+  -p 8080:8080 elvisk123/movie-discovery:v1
 docker ps
 curl http://localhost:8080
 ```
@@ -120,9 +120,9 @@ docker exec -it lb-01 sh -c 'haproxy -sf $(pidof haproxy) -f /etc/haproxy/haprox
   Do **not** hardcode API keys. Use environment variables or Docker secrets:
   ```bash
   docker run -d --name movie-discovery \
-    -e TMDB_API_KEY="your_actual_api_key" \
+    -e TMDB_API_KEY="e1afb4b04e6e676a5e5bc9d6195b3175" \
     -p 8080:8080 \
-    ketia/movie-discovery:v1
+    elvisk123/movie-discovery:v1
   ```
 
 - **Further steps:**  
